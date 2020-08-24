@@ -1,4 +1,4 @@
-# umi-plugin-hash
+# umi-plugin-rehash
 
 [![NPM version](https://img.shields.io/npm/v/umi-plugin-rehash.svg?style=flat)](https://npmjs.org/package/umi-plugin-rehash)
 [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-hash.svg?style=flat)](https://npmjs.org/package/umi-plugin-rehash)
