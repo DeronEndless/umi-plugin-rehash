@@ -1,7 +1,7 @@
 # umi-plugin-hash
 
-[![NPM version](https://img.shields.io/npm/v/umi-plugin-hash.svg?style=flat)](https://npmjs.org/package/umi-plugin-hash)
-[![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-hash.svg?style=flat)](https://npmjs.org/package/umi-plugin-hash)
+[![NPM version](https://img.shields.io/npm/v/umi-plugin-rehash.svg?style=flat)](https://npmjs.org/package/umi-plugin-rehash)
+[![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-hash.svg?style=flat)](https://npmjs.org/package/umi-plugin-rehash)
 
 replace hash
 
@@ -24,7 +24,7 @@ Configure in `.umirc.js`,
 ```js
 export default {
   plugins: [
-    ['umi-plugin-hash', {
+    ['umi-plugin-rehash', {
       hash: RELEASE_VERSION // 修改的hash
     }],
   ],
