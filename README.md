@@ -3,7 +3,7 @@
 [![NPM version](https://img.shields.io/npm/v/umi-plugin-hash.svg?style=flat)](https://npmjs.org/package/umi-plugin-hash)
 [![NPM downloads](http://img.shields.io/npm/dm/umi-plugin-hash.svg?style=flat)](https://npmjs.org/package/umi-plugin-hash)
 
-modify hash
+replace hash
 
 ## Install
 

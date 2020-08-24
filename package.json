@@ -1,13 +1,13 @@
 {
   "name": "umi-plugin-rehash",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "lib/index.js",
   "description": "replace hash",
   "authors": {
     "name": "deronendless",
     "email": "deronendless@gmail.com"
   },
-  "repository": "deronendless/umi-plugin-rehash",
+  "repository": "https://github.com/DeronEndless/umi-plugin-rehash",
   "scripts": {
     "start": "cross-env APP_ROOT=example umi dev",
     "build": "father-build",
