@@ -33,7 +33,10 @@ export default {
 
 ## Options
 
-TODO
+| 参数 | 说明 | 类型 | 默认值 | 可选值 |
+| --- | --- | --- | --- | --- |
+| hash | 自定义的hash | string | 无 |
+| mode | hash模式：**umi.xxxx.js** query模式：**umi.js?xxxxx** | string |  'hash' | 'hash' 或 'query'
 
 ## LICENSE
 
