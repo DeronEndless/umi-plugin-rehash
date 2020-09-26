@@ -48,13 +48,28 @@ export default function (api, { hash, mode = 'hash' }) {
     
     config.output.filename(JS_FILENAME[mode].filename);
     config.output.chunkFilename(JS_FILENAME[mode].chunkFilename);
-  })
+  });
 
   if (mode === 'query') {
     api.modifyHTMLWithAST(($) => {
-      
-      $('link[href="/umi.css"]').attr('href', `/umi.css?v=${hash}`);
-      $('script[src="/umi.js"]').attr('src', `/umi.js?v=${hash}`);
+
+      $('script').each((_, el) => {
+        const scriptEl = $(el);
+        const umiFlag = /\/?umi\.js$/g;
+
+        if (umiFlag.test(scriptEl.attr('src'))) {
+          scriptEl.attr('src', `${scriptEl.attr('src')}?v=${hash}`);
+        }
+      });
+
+      $('link').each((_, el) => {
+        const linkEl = $(el);
+        const umiFlag = /\/?umi\.css$/g;
+        
+        if (umiFlag.test(linkEl.attr('href'))) {
+          linkEl.attr('href', `${linkEl.attr('href')}?v=${hash}`);
+        }
+      });
 
       return $;
     });
